@@ -66,13 +66,60 @@
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
 }
-.menu-branding .portrait {
+/* .menu-branding .portrait {
   width: 250px;
   height: 250px;
   background: url("../img/picccc.jpg");
   border-radius: 50%;
   border: solid 3px #eece1a;
+} */
+
+
+.menu-branding .portrait {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid 3px #eece1a;
+  background: url("../img/picccc.jpg") center/cover no-repeat; /* Adjusted background property */
 }
+
+.menu-branding .portrait {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid 3px #eece1a;
+  background: url("../img/picccc.jpg") center/cover no-repeat;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.menu-branding .portrait:hover {
+  transform: scale(1.1); /* Add a slight zoom effect on hover for interactivity */
+}
+
+/* Add styles for better visual appeal to the surrounding elements */
+.menu-branding {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.menu-branding h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.menu-branding p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
@@ -778,7 +825,7 @@ div[class^="tag-"] p {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../img/picc.jpg");
+    background: url("../img/inde.jpg");
     width: 150px;
     height: 150px;
   }
